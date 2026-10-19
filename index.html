@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweet Crumbs Bakery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement text-center py-2">
+        Freshly Baked Every Day | Made With Love
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#home">
+                <span class="brand-icon">✿</span> Sweet Crumbs<span class="dot">.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Our Menu</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn bakery-btn" href="#menu">Order Now ↗</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <header id="home">
+        <div id="bakeryCarousel"
+             class="carousel slide carousel-fade"
+             data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bakeryCarousel"
+                        data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#bakeryCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+
+                <button type="button" data-bs-target="#bakeryCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="images/hero-croissants.jpg"
+                         class="d-block w-100 hero-image"
+                         alt="Freshly baked croissants">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="carousel-caption hero-caption">
+                        <p class="eyebrow">FRESH FROM OUR OVEN</p>
+                        <h1>A Little Sweetness<br>Goes A Long Way.</h1>
+                        <p>Delicious cakes, fresh bread and beautiful pastries
+                           made to brighten your day.</p>
+
+                        <a href="#menu" class="btn bakery-btn btn-lg">
+                            Explore Our Menu ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="images/hero-cake.jpg"
+                         class="d-block w-100 hero-image"
+                         alt="Beautiful celebration cake">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="carousel-caption hero-caption">
+                        <p class="eyebrow">MADE FOR YOUR MOMENTS</p>
+                        <h1>Celebrate With<br>Something Special.</h1>
+                        <p>Make birthdays and special occasions sweeter
+                           with our handcrafted cakes.</p>
+
+                        <a href="#menu" class="btn bakery-btn btn-lg">
+                            Discover Our Cakes ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="images/hero-bread.jpg"
+                         class="d-block w-100 hero-image"
+                         alt="Rustic artisan bread">
+
+                    <div class="hero-overlay"></div>
+
+                    <div class="carousel-caption hero-caption">
+                        <p class="eyebrow">BAKED WITH LOVE</p>
+                        <h1>Good Mornings<br>Start Here.</h1>
+                        <p>Enjoy the comforting taste of freshly baked
+                           bread and buttery pastries.</p>
+
+                        <a href="#menu" class="btn bakery-btn btn-lg">
+                            View Our Menu ↗
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button"
+                    data-bs-target="#bakeryCarousel" data-bs-slide="prev"
+                    aria-label="Previous slide">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button"
+                    data-bs-target="#bakeryCarousel" data-bs-slide="next"
+                    aria-label="Next slide">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features py-4">
+        <div class="container">
+            <div class="row text-center g-4">
+
+                <div class="col-6 col-lg-3">
+                    <div class="feature-box">
+                        <span>♡</span>
+                        <h5>Made With Love</h5>
+                        <p>Every single batch</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="feature-box">
+                        <span>✧</span>
+                        <h5>Fresh Ingredients</h5>
+                        <p>Quality you can taste</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="feature-box">
+                        <span>♧</span>
+                        <h5>Baked Daily</h5>
+                        <p>Fresh from our oven</p>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <div class="feature-box">
+                        <span>♡</span>
+                        <h5>Happy Customers</h5>
+                        <p>Smiles in every bite</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+                    <div class="about-image-wrapper">
+                        <img src="images/promo-bakery.avif"
+                             class="img-fluid about-image"
+                             alt="Baker preparing delicious pastries">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="eyebrow dark-eyebrow">OUR STORY</p>
+
+                    <h2 class="section-title">
+                        Where Every Bite<br>
+                        Feels Like <em>Home.</em>
+                    </h2>
+
+                    <p class="section-text">
+                        Welcome to Sweet Crumbs Bakery, where passion
+                        meets the art of baking. We believe that fresh
+                        ingredients and traditional recipes create the
+                        most memorable flavours.
+                    </p>
+
+                    <p class="section-text">
+                        From delicious cakes to golden croissants, every
+                        treat is prepared with care. Our mission is to
+                        bring happiness to your table, one bite at a time.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Get To Know Us →
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu / Product Cards -->
+    <section id="menu" class="menu-section section-padding">
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <p class="eyebrow dark-eyebrow">FRESHLY PREPARED</p>
+                <h2 class="section-title">Our <em>Favourites</em></h2>
+                <p class="section-text mx-auto">
+                    Discover our delicious selection of freshly baked treats.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-3">
+
+                <!-- Product 1 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="images/product-cake.jpg"
+                             class="card-img-top product-image"
+                             alt="Chocolate dream cake">
+
+                        <div class="card-body">
+                            <span class="product-label">BESTSELLER</span>
+                            <h5 class="card-title mt-2">
+                                Chocolate Dream Cake
+                            </h5>
+                            <p class="card-text">
+                                Rich chocolate layers with creamy frosting.
+                            </p>
+
+                            <div class="product-bottom">
+                                <strong>Rs. 1,800</strong>
+                                <a href="#contact" class="round-arrow"
+                                   aria-label="Enquire about chocolate cake">↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="images/product-cupcakes.jpg"
+                             class="card-img-top product-image"
+                             alt="Vanilla cupcakes">
+
+                        <div class="card-body">
+                            <span class="product-label">FAN FAVOURITE</span>
+                            <h5 class="card-title mt-2">
+                                Vanilla Cupcakes
+                            </h5>
+                            <p class="card-text">
+                                Soft cupcakes topped with creamy frosting.
+                            </p>
+
+                            <div class="product-bottom">
+                                <strong>Rs. 250</strong>
+                                <a href="#contact" class="round-arrow"
+                                   aria-label="Enquire about cupcakes">↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="images/product-croissant.jpg"
+                             class="card-img-top product-image"
+                             alt="Buttery croissant">
+
+                        <div class="card-body">
+                            <span class="product-label">BAKED DAILY</span>
+                            <h5 class="card-title mt-2">
+                                Butter Croissant
+                            </h5>
+                            <p class="card-text">
+                                Golden, flaky layers with a buttery finish.
+                            </p>
+
+                            <div class="product-bottom">
+                                <strong>Rs. 220</strong>
+                                <a href="#contact" class="round-arrow"
+                                   aria-label="Enquire about croissants">↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="images/product-donuts.jpg"
+                             class="card-img-top product-image"
+                             alt="Glazed doughnuts">
+
+                        <div class="card-body">
+                            <span class="product-label">SWEET TREAT</span>
+                            <h5 class="card-title mt-2">
+                                Glazed Doughnuts
+                            </h5>
+                            <p class="card-text">
+                                Soft doughnuts finished with a sweet glaze.
+                            </p>
+
+                            <div class="product-bottom">
+                                <strong>Rs. 180</strong>
+                                <a href="#contact" class="round-arrow"
+                                   aria-label="Enquire about doughnuts">↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="small text-center mt-4 text-muted">
+                Note: Prices are examples for this student project.
+            </p>
+        </div>
+    </section>
+
+    <!-- Promotional Section -->
+    <section class="promo-section">
+        <div class="container text-center promo-content">
+            <p class="eyebrow">A SWEET LITTLE REMINDER</p>
+
+            <h2>Life Is Short.<br>Make It <em>Delicious.</em></h2>
+
+            <p>Bring home something freshly baked today.</p>
+
+            <a href="#contact" class="btn promo-btn btn-lg">
+                Visit Our Bakery ↗
+            </a>
+        </div>
+    </section>
+
+    
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-5">
+                    <p class="eyebrow dark-eyebrow">GET IN TOUCH</p>
+
+                    <h2 class="section-title">
+                        Your Next Treat<br>Is <em>Waiting.</em>
+                    </h2>
+
+                    <p class="section-text">
+                        Have a question or planning a celebration?
+                        Contact us — we'd love to hear from you.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span class="contact-icon">⌖</span>
+                        <div>
+                            <strong>Our Location</strong>
+                            <p>123 Bakery Street, Your City, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="contact-icon">◷</span>
+                        <div>
+                            <strong>Opening Hours</strong>
+                            <p>
+                                Monday – Saturday: 9 AM – 9 PM<br>
+                                Sunday: 10 AM – 6 PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="contact-icon">✉</span>
+                        <div>
+                            <strong>Email Address</strong>
+                            <p>hello@sweetcrumbs.example</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card">
+                        <h3>Send Us A Message</h3>
+                        <p class="form-intro">
+                            Fill in the form and tell us what you need.
+                        </p>
+
+                        <form id="contactForm">
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">
+                                        Your Name
+                                    </label>
+                                    <input type="text" id="name"
+                                           class="form-control"
+                                           placeholder="Enter your name"
+                                           required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">
+                                        Email Address
+                                    </label>
+                                    <input type="email" id="email"
+                                           class="form-control"
+                                           placeholder="you@example.com"
+                                           required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">
+                                        Subject
+                                    </label>
+                                    <select id="subject" class="form-select"
+                                            required>
+                                        <option value="" selected disabled>
+                                            Choose a topic
+                                        </option>
+                                        <option>Custom Cake Order</option>
+                                        <option>Product Enquiry</option>
+                                        <option>Feedback</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">
+                                        Your Message
+                                    </label>
+                                    <textarea id="message" rows="4"
+                                              class="form-control"
+                                              placeholder="Write your message..."
+                                              required></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit"
+                                            class="btn bakery-btn btn-lg">
+                                        Send Message ↗
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <p id="formMessage" class="form-message mt-3"
+                               role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bakery-footer">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-5">
+                    <a href="#home" class="footer-brand">
+                        ✿ Sweet Crumbs<span>.</span>
+                    </a>
+
+                    <p class="footer-description">
+                        A neighbourhood bakery creating little moments
+                        of happiness, one fresh bake at a time.
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h6>Explore</h6>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#menu">Our Menu</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h6>Information</h6>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#contact">Custom Orders</a>
+                    <a href="#contact">Opening Hours</a>
+                </div>
+
+                <div class="col-lg-3">
+                    <h6>Follow Us</h6>
+
+                    <div class="social-links">
+                        <a href="#contact" aria-label="Instagram">ig</a>
+                        <a href="#contact" aria-label="Facebook">f</a>
+                        <a href="#contact" aria-label="TikTok">♪</a>
+                    </div>
+
+                    <p class="footer-description">
+                        Follow us for daily bakes and sweet updates.
+                    </p>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom d-flex flex-column flex-md-row
+                        justify-content-between gap-2">
+                <p>
+                    © <span id="year"></span> Sweet Crumbs Bakery.
+                    Student Project.
+                </p>
+                <p>Made with care <span class="heart">♥</span></p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    
+
+</body>
+</html>

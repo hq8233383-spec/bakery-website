@@ -1,0 +1,677 @@
+
+/* ==================================
+   SWEET CRUMBS BAKERY
+   Custom CSS Styling
+================================== */
+
+:root {
+    --cream: #fffaf4;
+    --beige: #f5e9dd;
+    --pink: #e8b6aa;
+    --rose: #b96f61;
+    --brown: #3d2924;
+    --muted: #7d6a61;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--brown);
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Announcement Bar */
+.announcement {
+    background-color: var(--brown);
+    color: var(--white);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation Header */
+.navbar {
+    background-color: var(--cream);
+    padding: 16px 0;
+    border-bottom: 1px solid #eee1d6;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: var(--brown);
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: var(--rose);
+}
+
+.brand-icon,
+.dot {
+    color: var(--rose);
+}
+
+.navbar .nav-link {
+    color: var(--brown);
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--rose);
+}
+
+/* Buttons */
+.bakery-btn {
+    display: inline-block;
+    background-color: var(--rose);
+    border: 1px solid var(--rose);
+    color: var(--white);
+    border-radius: 3px;
+    padding: 12px 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.bakery-btn:hover {
+    background-color: var(--brown);
+    border-color: var(--brown);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px #3d292426;
+}
+
+/* Hero Carousel */
+.hero-image {
+    height: 650px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(35, 22, 17, 0.76),
+        rgba(35, 22, 17, 0.35),
+        rgba(35, 22, 17, 0.05)
+    );
+}
+
+.hero-caption {
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.eyebrow {
+    color: #f0c7b8;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero-caption h1 {
+    font-size: clamp(42px, 5vw, 75px);
+    font-weight: 700;
+    line-height: 1.12;
+    margin-bottom: 20px;
+}
+
+.hero-caption > p:not(.eyebrow) {
+    max-width: 480px;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+.carousel-indicators button {
+    height: 4px !important;
+}
+
+/* Features */
+.features {
+    background-color: var(--beige);
+}
+
+.feature-box {
+    padding: 8px 5px;
+}
+
+.feature-box > span {
+    color: var(--rose);
+    font-size: 30px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.feature-box h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.feature-box p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* General Sections */
+.section-padding {
+    padding: 90px 0;
+}
+
+.dark-eyebrow {
+    color: var(--rose);
+}
+
+.section-title {
+    font-size: clamp(35px, 4vw, 53px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.section-title em {
+    color: var(--rose);
+}
+
+.section-text {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 2;
+    max-width: 560px;
+}
+
+.section-heading {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.text-link {
+    display: inline-block;
+    color: var(--brown);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--rose);
+}
+
+.text-link:hover {
+    color: var(--rose);
+}
+
+/* About Section */
+.about-image-wrapper {
+    position: relative;
+    padding: 0 25px 25px 0;
+}
+
+.about-image-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 65%;
+    right: 0;
+    bottom: 0;
+    background-color: #ead4c4;
+    z-index: 0;
+}
+
+.about-image {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+/* Menu Section */
+.menu-section {
+    background-color: #f7eee4;
+}
+
+.product-card {
+    background-color: var(--cream);
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #3d29240b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px #3d29241c;
+}
+
+.product-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.04);
+}
+
+.product-card .card-body {
+    padding: 22px 18px;
+}
+
+.product-label {
+    display: inline-block;
+    background-color: #f0dfd3;
+    color: var(--brown);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 7px 9px;
+}
+
+.product-card .card-title {
+    color: var(--brown);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.product-card .card-text {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+    min-height: 44px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee0d4;
+    padding-top: 15px;
+    margin-top: 16px;
+}
+
+.product-bottom strong {
+    font-size: 14px;
+}
+
+.round-arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #f0dfd3;
+    color: var(--brown);
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+}
+
+.round-arrow:hover {
+    background-color: var(--rose);
+    color: var(--white);
+}
+
+/* Promotional Banner */
+.promo-section {
+    background:
+        linear-gradient(rgba(45, 28, 23, 0.83),
+                        rgba(45, 28, 23, 0.70)),
+        url("images/promo-bakery.jpg") center/cover no-repeat;
+    color: var(--white);
+    padding: 100px 0;
+}
+
+.promo-content h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.promo-content h2 em {
+    color: #f0c7b8;
+}
+
+.promo-content > p:not(.eyebrow) {
+    color: #f5e4da;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.promo-btn {
+    background-color: var(--cream);
+    color: var(--brown);
+    border: 1px solid var(--cream);
+    border-radius: 3px;
+    padding: 13px 23px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.promo-btn:hover {
+    background-color: var(--rose);
+    border-color: var(--rose);
+    color: var(--white);
+}
+
+/* Gallery */
+.gallery-grid > div {
+    overflow: hidden;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gallery-grid > div:hover .gallery-image {
+    transform: scale(1.06);
+    filter: saturate(1.15);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f7eee4;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.contact-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 43px;
+    height: 43px;
+    background-color: #ead4c4;
+    color: var(--rose);
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.contact-detail strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.contact-form-card {
+    background-color: var(--cream);
+    padding: 35px;
+    box-shadow: 0 12px 35px #3d29240d;
+}
+
+.contact-form-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.form-intro {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    background-color: #fffdfb;
+    border: 1px solid #e7d9ce;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--rose);
+    box-shadow: 0 0 0 3px #b96f611c;
+}
+
+.form-message {
+    color: #397344;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* Footer */
+.bakery-footer {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 60px 0 22px;
+}
+
+.footer-brand {
+    color: var(--white);
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer-brand span {
+    color: var(--pink);
+}
+
+.footer-brand:hover {
+    color: var(--pink);
+}
+
+.footer-description {
+    color: #d5c0b5;
+    font-size: 12px;
+    line-height: 1.9;
+    margin-top: 16px;
+    max-width: 330px;
+}
+
+.bakery-footer h6 {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.bakery-footer .col-lg-2 a {
+    display: block;
+    color: #d5c0b5;
+    font-size: 12px;
+    margin-bottom: 13px;
+    transition: color 0.3s ease;
+}
+
+.bakery-footer .col-lg-2 a:hover {
+    color: var(--pink);
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #8b7167;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--rose);
+    border-color: var(--rose);
+}
+
+.bakery-footer hr {
+    border-color: #735c53;
+    margin: 35px 0 20px;
+}
+
+.footer-bottom p {
+    color: #c9b3a8;
+    font-size: 11px;
+    margin: 0;
+}
+
+.heart {
+    color: var(--pink);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 12px;
+        align-items: stretch !important;
+    }
+
+    .hero-image {
+        height: 570px;
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .about-image {
+        height: 400px;
+    }
+}
+
+@media (max-width: 575px) {
+    .announcement {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .hero-image {
+        height: 550px;
+    }
+
+    .hero-caption {
+        left: 8%;
+        right: 8%;
+    }
+
+    .hero-caption h1 {
+        font-size: 39px;
+    }
+
+    .hero-caption > p:not(.eyebrow) {
+        font-size: 12px;
+    }
+
+    .hero-caption .btn {
+        font-size: 12px;
+        padding: 11px 14px;
+    }
+
+    .feature-box h5 {
+        font-size: 12px;
+    }
+
+    .feature-box p {
+        font-size: 10px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .about-image {
+        height: 330px;
+    }
+
+    .product-image {
+        height: 190px;
+    }
+
+    .product-card .card-body {
+        padding: 16px 13px;
+    }
+
+    .product-card .card-title {
+        font-size: 16px;
+    }
+
+    .gallery-image {
+        height: 175px;
+    }
+
+    .promo-section {
+        padding: 70px 0;
+    }
+
+    .contact-form-card {
+        padding: 22px;
+    }
+
+    .bakery-footer {
+        padding-top: 45px;
+    }
+}
